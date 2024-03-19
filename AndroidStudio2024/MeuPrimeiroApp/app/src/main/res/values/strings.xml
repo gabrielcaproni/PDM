@@ -9,4 +9,6 @@
     <string name="login_user_pw">Senha</string>
     <string name="login_user_pw_placeholder">Digite sua Senha</string>
 
+    <string name="login_buttom_login">Logar</string>
+
 </resources>
