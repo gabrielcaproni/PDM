@@ -10,5 +10,9 @@
     <string name="login_user_pw_placeholder">Digite sua Senha</string>
 
     <string name="login_buttom_login">Logar</string>
+    <string name="login_button_register">Cadastrar</string>
+    <string name="login_button_forgot_pw">"Esqueci a senha "</string>
+
+    <string name="login_succesfull">""Login efetuado com sucesso</string>
 
 </resources>
