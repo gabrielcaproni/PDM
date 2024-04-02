@@ -11,8 +11,13 @@
 
     <string name="login_buttom_login">Logar</string>
     <string name="login_button_register">Cadastrar</string>
-    <string name="login_button_forgot_pw">"Esqueci a senha "</string>
+    <string name="login_button_forgot_pw">"Esqueci a senha"</string>
 
-    <string name="login_succesfull">""Login efetuado com sucesso</string>
+    <string name="login_succesfull">"Login efetuado com sucesso"</string>
+
+    <string name="login_user_forgot_pw_message">Implementar mensagem</string>
+
+    <string name="login_user_name_empty">Nome de usuario nao pode ser vazio</string>
+    <string name="login_user_pw_empty">Senha de usuario nao pode ser vazia</string>
 
 </resources>
