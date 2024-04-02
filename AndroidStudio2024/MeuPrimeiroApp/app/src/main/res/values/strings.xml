@@ -19,5 +19,6 @@
 
     <string name="login_user_name_empty">Nome de usuario nao pode ser vazio</string>
     <string name="login_user_pw_empty">Senha de usuario nao pode ser vazia</string>
+    <string name="login_user_wrong_user_name_or_pw">Nome de usuario ou senha incorreto</string>
 
 </resources>
