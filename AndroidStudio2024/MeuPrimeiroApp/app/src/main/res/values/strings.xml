@@ -21,4 +21,7 @@
     <string name="login_user_pw_empty">Senha de usuario nao pode ser vazia</string>
     <string name="login_user_wrong_user_name_or_pw">Nome de usuario ou senha incorreto</string>
 
+    <!--Chaves da tela home-->
+
+    <string name="home_title">Home</string>
 </resources>

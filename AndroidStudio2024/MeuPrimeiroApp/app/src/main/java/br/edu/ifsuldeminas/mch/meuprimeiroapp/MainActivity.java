@@ -1,7 +1,9 @@
 package br.edu.ifsuldeminas.mch.meuprimeiroapp;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -53,9 +55,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if(userNameStr.equals(USER) && userPWStr.equals(PW)){
-                Toast toast = Toast.makeText(view.getContext(),
-                        R.string.login_succesfull, Toast.LENGTH_SHORT);
-                toast.show();
+                Intent welcomeIntent = new Intent(getApplicationContext(), WelcomeActivity.class);
+                welcomeIntent.putExtra("user_name", userNameStr);
+
+                startActivity(welcomeIntent);
+
+                //Abrir uma tela/activity
             }
 
             else{
