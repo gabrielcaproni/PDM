@@ -301,4 +301,12 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewResultadoID"
         app:layout_constraintEnd_toEndOf="@+id/textViewResultadoID" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="491dp"
+        android:layout_height="517dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-183dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
