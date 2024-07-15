@@ -4,4 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Constraint Layout Atividade 3"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50
+" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="367dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:justificationMode="inter_word"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, magna non varius bibendum, tortor nunc facilisis nulla, nec pretium elit odio id magna. Nulla facilisi. Suspendisse potenti. Integer eu purus et risus cursus sagittis. Morbi blandit nulla nec magna dapibus, ut luctus felis fermentum. Sed cursus felis id tortor pretium, at tempor felis interdum. Proin id scelerisque nisl. Fusce maximus ultricies lacus a dapibus. Aenean at nisl eu magna luctus tempor non nec urna."
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="171dp"
+        android:layout_height="363dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:justificationMode="inter_word"
+        android:text="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus in accumsan felis. Integer vehicula leo at justo laoreet, a ultrices enim ultricies. Sed mollis, velit non congue efficitur, magna justo bibendum nulla, in facilisis nisl dolor non turpis. Nulla facilisi. Praesent vitae eros non libero dapibus tempus. Duis malesuada, sapien ac fermentum consectetur, enim libero tincidunt urna, nec ultricies elit mi nec justo. Curabitur scelerisque enim sit amet tellus suscipit, ut egestas sapien iaculis."
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Melhor texto"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.79" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="ESQUERDA"
+        app:cornerRadius="10px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:text="EMPATE"
+        app:cornerRadius="10px"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="DIREITA"
+        app:cornerRadius="10px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
