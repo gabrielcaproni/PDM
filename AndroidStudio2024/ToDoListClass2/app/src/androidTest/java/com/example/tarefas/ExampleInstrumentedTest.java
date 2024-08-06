@@ -1,4 +1,4 @@
-package com.example.todolistclass;
+package com.example.tarefas;
 
 import android.content.Context;
 
